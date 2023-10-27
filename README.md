@@ -1,7 +1,7 @@
 
 # Motion Detection
 
-Runnig the program-
+Runnig the program.
 ```bash
 pip3 install -r requirements.txt
 python3 main.py
