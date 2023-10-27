@@ -1,4 +1,4 @@
-```markdown
+
 # Motion Detection
 
 Runnig the program-
@@ -11,4 +11,4 @@ python3 main.py
 Get training data with `python3 getkeypoint.py`
 
 Train the model with `python3 train.py`
-```
+
