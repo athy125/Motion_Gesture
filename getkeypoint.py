@@ -76,3 +76,13 @@ with mp_hands.Hands(
         fps = 1//(new_frame_time-prev_frame_time)
         prev_frame_time = new_frame_time
         fps = str(fps)
+
+                # Flip the image horizontally for a selfie-view display.
+        image = cv2.flip(image, 1)
+
+        cv2.putText(image, fps, (7, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 3, cv2.LINE_AA)
+        cv2.imshow('Hand Gesture Detection', image)
+        if key & 0xFF == ord('q'):
+            break
+cap.release()
+cv2.destroyAllWindows()
